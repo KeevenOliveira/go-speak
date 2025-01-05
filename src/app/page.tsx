@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import ChatsMenu from "@/components/ChatsMenu";
 import Chat from "@/components/Chat";
 import { Container, ChatContainer } from "./styles";
-import HamburgerMenu from "@/components/HamburguerMenu";
+import HamburgerMenu from "@/components/HamburgerMenu";
 
 export default function Home() {
   const { data: _, status } = useSession();

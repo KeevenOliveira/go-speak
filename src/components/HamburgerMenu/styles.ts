@@ -33,7 +33,7 @@ export const HamburgerMenuButton = styled.button`
   font-size: 30px;
   position: fixed;
   top: 15px;
-  left: 40px;
+  left: 45px;
   z-index: 1100;
   cursor: pointer;
   color: var(--noble-white-400);
