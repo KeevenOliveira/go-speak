@@ -81,38 +81,44 @@ const Input = () => {
   };
 
   return (
-    <InputContainer onSubmit={handleSubmitMessage}>
-      <div>
-        <RecordButton onClick={handleRecordMessage} type="button">
-          <Image
-            src={"/input/record.svg"}
-            alt="record message"
-            width={20}
-            height={24}
-          />
-        </RecordButton>
-        <InputField placeholder="Type a message" type="text" />
-      </div>
-      <div>
-        <SendFileButton onClick={handleSendFile} type="button">
-          <Image
-            src={"/input/attachment.svg"}
-            alt="send file"
-            width={16}
-            height={20}
-          />
-        </SendFileButton>
+    <>
+      {chat_id && (
+        <InputContainer onSubmit={handleSubmitMessage}>
+          <div>
+            <RecordButton onClick={handleRecordMessage} type="button">
+              <Image
+                src={"/input/record.svg"}
+                alt="record message"
+                width={20}
+                height={24}
+              />
+            </RecordButton>
+            <InputField placeholder="Type a message" type="text" />
+          </div>
+          <div>
+            <SendFileButton onClick={handleSendFile} type="button">
+              <Image
+                src={"/input/attachment.svg"}
+                alt="send file"
+                width={16}
+                height={20}
+              />
+            </SendFileButton>
 
-        <SendButton type="submit">
-          <Image
-            src={"/input/send.svg"}
-            alt="send message"
-            width={16}
-            height={16}
-          />
-        </SendButton>
-      </div>
-    </InputContainer>
+            <SendButton type="submit">
+              <Image
+                src={"/input/send.svg"}
+                alt="send message"
+                width={16}
+                height={16}
+              />
+            </SendButton>
+          </div>
+        </InputContainer>
+      )}
+
+      {!chat_id && <InputContainer>No chat selected</InputContainer>}
+    </>
   );
 };
 
