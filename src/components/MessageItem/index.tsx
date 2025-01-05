@@ -37,7 +37,7 @@ const MessageItem = ({
       <MessageItemContent>
         <MessageTitleContainer>
           <MessageTitle>{user_name}</MessageTitle>
-          <MinutesAgo>{timeAgo("2025-01-05T05:44:21.646972")}</MinutesAgo>
+          <MinutesAgo>{timeAgo(timestamp)}</MinutesAgo>
         </MessageTitleContainer>
         <MessageType type={type} content={content} />
       </MessageItemContent>

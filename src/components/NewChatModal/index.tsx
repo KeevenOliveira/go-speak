@@ -47,6 +47,8 @@ const NewChatModal = ({ isOpen, onClose }: NewChatModalProps) => {
 
     await createChat(title, participantsFormatted);
 
+    setTitle("");
+    setParticipants("");
     fetchChats();
     onClose();
   };
