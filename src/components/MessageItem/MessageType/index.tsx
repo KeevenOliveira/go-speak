@@ -14,7 +14,6 @@ const MessageType = ({ type, content }: MessageTypeProps) => {
     case "audio":
       return <AudioPlayer audioUrl={content} />;
     case "image":
-      console.log("chegou aqui");
       return (
         <MessageImage
           src={content}

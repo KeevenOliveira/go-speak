@@ -6,7 +6,6 @@ export const ChatContainer = styled.div`
   overflow-y: auto;
 
   &::-webkit-scrollbar {
-    /* none  */
     display: none;
   }
 `;
@@ -17,6 +16,10 @@ export const ChatHeader = styled.header`
   align-items: center;
   padding: 1rem;
   margin-bottom: 2rem;
+
+  @media (max-width: 425px) {
+    margin-top: 1rem;
+  }
 `;
 
 export const NewChatButton = styled.button`

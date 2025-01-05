@@ -29,8 +29,6 @@ const MessageItem = ({
   user_name,
   avatar_url,
 }: MessageItemProps) => {
-  console.log(type, "type");
-  console.log(timestamp, "timestamp");
   return (
     <MessageItemContainer key={user_id}>
       <MessageItemAvatar status="online">

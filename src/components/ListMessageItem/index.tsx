@@ -5,7 +5,6 @@ interface ListMessageItemProps {
 }
 
 const ListMessageItem = ({ messagesObject }: ListMessageItemProps) => {
-  console.log(messagesObject, "messagesObject");
   return (
     <>
       {messagesObject.map((messageObject) => (

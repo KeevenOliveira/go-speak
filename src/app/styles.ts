@@ -12,4 +12,8 @@ export const ChatContainer = styled.div`
   flex-direction: column;
   width: 100%;
   padding: 2rem;
+
+  @media (max-width: 425px) {
+    padding: 1rem;
+  }
 `;

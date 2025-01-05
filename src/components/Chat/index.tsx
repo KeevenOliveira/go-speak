@@ -33,30 +33,25 @@ const Chat = () => {
     };
 
     ws.onclose = (event) => {
-      console.log("WebSocket connection closed:", event);
+      console.log("WebSocket connection closed");
     };
 
     ws.onerror = (error) => {
-      console.log("WebSocket error:", error);
-      console.log(error.currentTarget);
+      console.error("WebSocket error:", error);
     };
 
     ws.onmessage = (event) => {
       try {
-        console.log("Message received:", event.data);
-        console.table(event.data);
         const eventObject = JSON.parse(event.data);
         if (!eventObject || typeof eventObject !== "object") {
           console.warn("Invalid message format received:", event.data);
           return;
         }
         if (eventObject.event === "message_received") {
-          console.log("Message received:", eventObject?.data);
-
           setChatMessages((prev) => [...prev, eventObject?.data]);
         }
       } catch (error) {
-        console.log(error);
+        console.error(error);
       }
     };
 
@@ -69,7 +64,7 @@ const Chat = () => {
     <>
       <ChatContainer>
         <ChatHeader>
-          <h1>Chat</h1>
+          <h1>GoSpeak</h1>
           <NewChatButton onClick={() => setIsOpen(!isOpen)}>
             <Image src="/icons/new.svg" alt="new chat" width={20} height={20} />
           </NewChatButton>

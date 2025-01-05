@@ -45,9 +45,6 @@ const NewChatModal = ({ isOpen, onClose }: NewChatModalProps) => {
 
     participantsFormatted.push(String(data?.user?.email));
 
-    console.log(title, "title");
-    console.log(participants, "participants");
-
     await createChat(title, participantsFormatted);
 
     fetchChats();
