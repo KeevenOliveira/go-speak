@@ -5,13 +5,13 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     :root {
         /* Noble Black */
-        --noble-black-100: #f4f4f4;
-        --noble-black-200: #e1e1e1;
-        --noble-black-300: #c7c7c7;
-        --noble-black-400: #8d8d8d;
-        --noble-black-500: #5c5c5c;
-        --noble-black-600: #2f2f2f;
-        --noble-black-700: #121212;
+        --noble-black-100: #E8E9E9;
+        --noble-black-200: #CDCECF;
+        --noble-black-300: #9B9C9E;
+        --noble-black-400: #686B6E;
+        --noble-black-500: #363A3D;
+        --noble-black-600: #1A1D21;
+        --noble-black-700: #131619;
         --noble-black-800: #0D0F10;
 
         /* Day Blue */
@@ -20,8 +20,9 @@ export const GlobalStyle = createGlobalStyle`
         --day-blue-300: #9cb8e9;
         --day-blue-400: #6a90de;
         --day-blue-500: #4161d4;
-        --day-blue-600: #2a41b8;
+        --day-blue-600: #3045C9;
         --day-blue-700: #162f9c;
+        --day-blue-900: #0C1132;
 
         /* Purple Blue */
         --purple-blue-100: #ece6f4;
@@ -42,13 +43,13 @@ export const GlobalStyle = createGlobalStyle`
         --sunglow-700: #ab5f0b;
 
         /* Stem Green */
-        --stem-green-100: #e7f4e8;
-        --stem-green-200: #c8e9c7;
-        --stem-green-300: #97d597;
-        --stem-green-400: #63b765;
-        --stem-green-500: #2b9932;
-        --stem-green-600: #217b29;
-        --stem-green-700: #165e1f;
+        --stem-green-100: #F7FDF4;
+        --stem-green-200: #EDFBE6;
+        --stem-green-300: #DBF7CD;
+        --stem-green-400: #C8F4B4;
+        --stem-green-500: #B6F09C;
+        --stem-green-600: #9AD37F;
+        --stem-green-700: #739F5F;
 
         /* Heisenberg Blue */
         --heisenberg-blue-100: #dff2f9;
@@ -74,7 +75,7 @@ export const GlobalStyle = createGlobalStyle`
         --electric-green-300: #95e091;
         --electric-green-400: #59ce5b;
         --electric-green-500: #2aae30;
-        --electric-green-600: #218b27;
+        --electric-green-600: #4AC97E;
         --electric-green-700: #165f1c;
 
         /* Red Power */
@@ -85,6 +86,8 @@ export const GlobalStyle = createGlobalStyle`
         --red-power-500: #e22b2b;
         --red-power-600: #b82222;
         --red-power-700: #861919;
+
+        --white: #ffffff;
     }
 
     * {
